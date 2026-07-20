@@ -20,3 +20,6 @@ footer{background:#091c1b;color:#f4ede3;min-height:125px;padding:35px 7vw;displa
 .contact-figures{right:-4vw;bottom:-2px;width:min(75vw,1100px);opacity:.3;filter:grayscale(1) sepia(.38) saturate(.55) contrast(1.08);mix-blend-mode:luminosity}
 @media(max-width:680px){.contact-figures{width:130vw;right:-38vw;opacity:.22}}
 .scroll-note{bottom:120px}
+.contact-links{flex-wrap:wrap;gap:28px 48px;max-width:900px}
+footer{grid-template-columns:1fr auto}
+@media(max-width:680px){.marquee{justify-content:center}.contact{min-height:720px}.contact h2{font-size:72px}footer{grid-template-columns:1fr}}

@@ -33,9 +33,6 @@ export default function Home() {
           <a href="#na-zywo">Na żywo</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
-        <a className="header-cta" href="mailto:koncerty@thestorytellers.pl">
-          Zaproś nas <Arrow />
-        </a>
       </header>
 
       <section className="hero" id="top">
@@ -46,25 +43,21 @@ export default function Home() {
             <em> żyje na scenie.</em>
           </h1>
           <p className="hero-lead">
-            Historie opowiedziane głosami, gitarami i zespołem, który nie boi się ciszy ani pełnego brzmienia.
+            Historie opowiedziane harmonią i rytmem. O emocjach i z emocjami.
           </p>
           <div className="hero-actions">
             <a className="button button-light" href="#na-zywo">Zobacz nas na żywo <span>↓</span></a>
             <a className="text-link" href="mailto:koncerty@thestorytellers.pl">Booking koncertów <Arrow /></a>
           </div>
         </div>
-        <div className="hero-photo" role="img" aria-label="The Storytellers w pełnym składzie">
-          <div className="photo-caption"><span>01</span> The Storytellers · pełny skład</div>
-        </div>
+        <div className="hero-photo" role="img" aria-label="The Storytellers w pełnym składzie" />
         <div className="scroll-note">Przewiń, żeby poznać historię</div>
       </section>
 
       <section className="marquee" aria-label="Najważniejsze informacje">
-        <span>Założony w 2024</span><i>✦</i>
-        <span>Ponad 60 minut muzyki</span><i>✦</i>
-        <span>Must Be The Music</span><i>✦</i>
-        <span>Mrągowo 2025</span><i>✦</i>
-        <span>Pełny skład lub akustycznie</span>
+        <span>Muzyka</span><i>✦</i>
+        <span>Historie</span><i>✦</i>
+        <span>Emocje</span>
       </section>
 
       <section className="about section" id="o-zespole">
@@ -72,10 +65,10 @@ export default function Home() {
         <div className="about-grid">
           <h2>Pięć osób.<br />Jedna opowieść.</h2>
           <div className="about-copy">
-            <p className="intro">The Storytellers założyliśmy w 2024 roku — my, Kuba Jaźwiecki i Mati Rybicki. Połączyły nas wieloletnia przyjaźń, muzyczne doświadczenie i potrzeba tworzenia własnych historii.</p>
-            <p>Mamy za sobą występy na Open’er Festival, Orange Warsaw Festival i Woodstock oraz udział w popularnych talent show.</p>
-            <p>Wszystko zaczęło się od akustycznego duetu. Dziś grają z nami także Jędrzej Antkiewicz na perkusji, Piotr „Pióro” Piórkowski na basie oraz Gabi Żmigrodzka na skrzypcach.</p>
-            <p>W duecie nagraliśmy „Historie Końca Lata”, ale już niebawem ukaże się nasza debiutancka płyta z nowymi utworami w pełnych, szerokich aranżach.</p>
+            <p className="intro">The Storytellers założyliśmy w 2024 roku — my, czyli Kuba Jaźwiecki i Mateusz Rybicki. Połączyły nas wieloletnia przyjaźń, muzyczna pasja i potrzeba opowiadania własnych historii.</p>
+            <p>Nasze „poprzednie muzyczne wcielenia” to niezależne ścieżki, które zaprowadziły nas na sceny m.in. Open’er Festival, Orange Warsaw Festival czy Woodstock. Obaj mamy za sobą również udział w popularnych talent show.</p>
+            <p>Rozdział pod tytułem „The Storytellers” rozpoczął się jako akustyczny duet, ale szybko ewoluował i dziś grają z nami także Jędrzej Antkiewicz na perkusji, Piotr „Pióro” Piórkowski na basie oraz Gabi Żmigrodzka na skrzypcach.</p>
+            <p>W duecie nagraliśmy dostępną w serwisie YT live sesję „Historie Końca Lata”, ale już niebawem ukaże się nasza debiutancka płyta z nowymi utworami w pełnych, szerokich, miejscami rockowych aranżach.</p>
           </div>
         </div>
         <blockquote>
@@ -83,7 +76,7 @@ export default function Home() {
           Najbardziej lubimy moment, w którym nasza muzyka zaczyna żyć na scenie.
         </blockquote>
         <div className="lineup" aria-label="Skład zespołu">
-          <div><b>Mati Rybicki</b><small>wokal · gitary · mandolina</small></div>
+          <div><b>Mateusz Rybicki</b><small>wokal · gitary · mandolina</small></div>
           <div><b>Kuba Jaźwiecki</b><small>wokal · gitary · instrumenty klawiszowe</small></div>
           <div><b>Piotr „Pióro” Piórkowski</b><small>gitara basowa</small></div>
           <div><b>Jędrzej Antkiewicz</b><small>perkusja</small></div>
@@ -94,8 +87,7 @@ export default function Home() {
       <section className="live section" id="na-zywo">
         <div className="section-number light">02 / Zobacz nas na żywo</div>
         <div className="live-heading">
-          <h2>Nie opowiadamy o koncertach.<br /><em>Pokazujemy je.</em></h2>
-          <p>Kliknij i posłuchaj, jak brzmią nasze historie na scenie.</p>
+          <h2>Wejdź do świata naszych<br /><em>muzycznych historii.</em></h2>
         </div>
         <div className="video-grid">
           {videos.map((video) => (
@@ -116,7 +108,7 @@ export default function Home() {
         <div className="format-copy">
           <div className="section-number">03 / Format koncertowy</div>
           <h2>Intymnie albo<br /><em>z pełną mocą.</em></h2>
-          <p>Nasz program to ponad 60 minut autorskiej muzyki — różnorodnej, dynamicznej i pełnej emocji. Kameralne momenty przeplatają się z mocniejszymi aranżacjami, dzięki czemu koncert ma swój rytm i dramaturgię.</p>
+          <p>Nasz program to ponad 60 minut autorskiej muzyki — różnorodnej, dynamicznej i pełnej emocji. W pełnym składzie kameralne momenty przeplatają się z mocniejszymi aranżacjami, nadając koncertowi naturalny rytm i wyraźną dramaturgię. Możemy również wystąpić w kameralnej, akustycznej odsłonie, dostosowanej do charakteru wydarzenia.</p>
           <div className="format-options">
             <div><span>01</span><b>Pełny skład</b><small>Pięcioosobowy zespół, szerokie brzmienie i koncertowa energia.</small></div>
             <div><span>02</span><b>Akustycznie</b><small>Głosy, gitary i mandolina — blisko publiczności.</small></div>
@@ -129,19 +121,17 @@ export default function Home() {
         <div className="section-number light">04 / Kontakt</div>
         <div className="contact-inner">
           <p>Koncerty · wydarzenia · współpraca</p>
-          <h2>Zagrajmy<br /><em>dla Was.</em></h2>
+          <h2>Tak nas<br /><em>znajdziesz</em></h2>
           <div className="contact-links">
             <a href="mailto:koncerty@thestorytellers.pl">koncerty@thestorytellers.pl <Arrow /></a>
             <a href="tel:+48690344431">+48 690 344 431 <Arrow /></a>
+            {socials.map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} <Arrow /></a>)}
           </div>
         </div>
       </section>
 
       <footer>
         <a className="footer-logo" href="#top" aria-label="The Storytellers — do góry"><img src="/assets/logo-new.png" alt="The Storytellers" /></a>
-        <div className="socials">
-          {socials.map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} <Arrow /></a>)}
-        </div>
         <small>© 2026 The Storytellers</small>
       </footer>
     </main>
