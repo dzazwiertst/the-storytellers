@@ -39,7 +39,7 @@ export default function Home() {
         </a>
         <nav aria-label="Stała nawigacja strony">
           <a href="#o-zespole">O zespole</a>
-          <a href="#na-zywo">Usłysz nas</a>
+          <a href="#na-zywo">Zobacz, jak gramy</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
         <button className="nav-handle" type="button" aria-label="Pokaż menu nawigacyjne">
@@ -58,7 +58,7 @@ export default function Home() {
             Historie opowiedziane harmonią i rytmem. O emocjach i z emocjami.
           </p>
           <div className="hero-actions">
-            <a className="button button-light" href="#na-zywo">Usłysz nas <span>↓</span></a>
+            <a className="button button-light" href="#na-zywo">Zobacz, jak gramy <span>↓</span></a>
             <a className="text-link" href="mailto:koncerty@thestorytellers.pl">Booking koncertów <Arrow /></a>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       <section className="live section" id="na-zywo">
-        <div className="section-number light">02 / Usłysz nas</div>
+        <div className="section-number light">02 / Zobacz, jak gramy</div>
         <div className="live-heading">
           <h2>Wejdź do świata naszych<br /><em>muzycznych historii.</em></h2>
         </div>
