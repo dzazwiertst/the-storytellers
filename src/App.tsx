@@ -39,7 +39,7 @@ export default function Home() {
         </a>
         <nav aria-label="Stała nawigacja strony">
           <a href="#o-zespole">O zespole</a>
-          <a href="#na-zywo">Na żywo</a>
+          <a href="#na-zywo">Usłysz nas</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
         <button className="nav-handle" type="button" aria-label="Pokaż menu nawigacyjne">
@@ -58,7 +58,7 @@ export default function Home() {
             Historie opowiedziane harmonią i rytmem. O emocjach i z emocjami.
           </p>
           <div className="hero-actions">
-            <a className="button button-light" href="#na-zywo">Zobacz nas na żywo <span>↓</span></a>
+            <a className="button button-light" href="#na-zywo">Usłysz nas <span>↓</span></a>
             <a className="text-link" href="mailto:koncerty@thestorytellers.pl">Booking koncertów <Arrow /></a>
           </div>
         </div>
@@ -84,8 +84,9 @@ export default function Home() {
           </div>
         </div>
         <blockquote>
-          <span>“</span>
-          Najbardziej lubimy moment, w którym nasza muzyka zaczyna żyć na scenie.
+          <span className="quote-mark quote-open" aria-hidden="true">“</span>
+          <p>Najbardziej lubimy moment, w którym nasza muzyka zaczyna żyć na scenie.</p>
+          <span className="quote-mark quote-close" aria-hidden="true">”</span>
         </blockquote>
         <div className="lineup" aria-label="Skład zespołu">
           <div><b>Mateusz Rybicki</b><small>wokal · gitary · mandolina</small></div>
@@ -97,7 +98,7 @@ export default function Home() {
       </section>
 
       <section className="live section" id="na-zywo">
-        <div className="section-number light">02 / Zobacz nas na żywo</div>
+        <div className="section-number light">02 / Usłysz nas</div>
         <div className="live-heading">
           <h2>Wejdź do świata naszych<br /><em>muzycznych historii.</em></h2>
         </div>
