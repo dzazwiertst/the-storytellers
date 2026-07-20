@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 const Play = () => (
@@ -22,9 +24,16 @@ const videos = [
 ];
 
 export default function Home() {
+  const [navCollapsed, setNavCollapsed] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setNavCollapsed(true), 3000);
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <main>
-      <header className="site-header">
+      <header className={`site-header${navCollapsed ? " nav-collapsed" : ""}`}>
         <a className="wordmark" href="#top" aria-label="The Storytellers — strona główna">
           <img src="/assets/logo-new.png" alt="The Storytellers" />
         </a>
@@ -33,6 +42,9 @@ export default function Home() {
           <a href="#na-zywo">Na żywo</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
+        <button className="nav-handle" type="button" aria-label="Pokaż menu nawigacyjne">
+          Menu <span aria-hidden="true">⌄</span>
+        </button>
       </header>
 
       <section className="hero" id="top">
