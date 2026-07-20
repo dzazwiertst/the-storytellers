@@ -28,7 +28,7 @@ export default function Home() {
         <a className="wordmark" href="#top" aria-label="The Storytellers — strona główna">
           <img src="/assets/logo-new.png" alt="The Storytellers" />
         </a>
-        <nav aria-label="Główna nawigacja">
+        <nav aria-label="Stała nawigacja strony">
           <a href="#o-zespole">O zespole</a>
           <a href="#na-zywo">Na żywo</a>
           <a href="#kontakt">Kontakt</a>
