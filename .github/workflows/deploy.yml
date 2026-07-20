@@ -1,0 +1,48 @@
+name: Deploy to OVHcloud
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ovh-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Install FTP client
+        run: sudo apt-get update && sudo apt-get install --yes lftp
+
+      - name: Deploy to OVHcloud
+        env:
+          FTP_SERVER: ${{ secrets.OVH_FTP_SERVER }}
+          FTP_USER: ${{ secrets.OVH_FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.OVH_FTP_PASSWORD }}
+        run: |
+          lftp <<EOF
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          set ssl:verify-certificate true
+          open -u "$FTP_USER","$FTP_PASSWORD" "$FTP_SERVER"
+          mirror --reverse --delete --verbose dist/ /www/
+          bye
+          EOF
