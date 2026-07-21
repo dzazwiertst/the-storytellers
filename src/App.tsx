@@ -38,6 +38,7 @@ export default function Home() {
           <img src="/assets/logo-new.png" alt="The Storytellers" />
         </a>
         <nav aria-label="Stała nawigacja strony">
+          <a href="#top">Start</a>
           <a href="#o-zespole">O zespole</a>
           <a href="#na-zywo">Zobacz, jak gramy</a>
           <a href="#kontakt">Kontakt</a>
