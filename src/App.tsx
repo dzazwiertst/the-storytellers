@@ -16,11 +16,11 @@ const socials = [
 
 const videos = [
   { title: "Groźna", context: "Must Be The Music · Polsat", href: "https://www.youtube.com/watch?v=zYtLwmQ95wA", image: "/assets/mbtm-stage.webp", featured: true },
+  { title: "Minus 2", context: "Otwock · 2026", href: "https://youtu.be/BolaF4rd6rY", image: "/assets/minus-2-otwock.webp" },
   { title: "Tylko w nas", context: "Piknik Country · Mrągowo 2025", href: "https://www.youtube.com/watch?v=C1k2nego2to", image: "/assets/mragowo-stage.webp" },
   { title: "Groźna", context: "Piknik Country · Mrągowo 2025", href: "https://www.youtube.com/watch?v=NHC3POmKFNQ", image: "/assets/mragowo.webp" },
   { title: "Koncert w Starym Maneżu", context: "Gdańsk · 17 maja 2025", href: "https://www.youtube.com/watch?v=pHLxgCQ7tt4", image: "/assets/stary-manez.webp" },
   { title: "Historie Końca Lata", context: "Live at Tallpine Records", href: "https://www.youtube.com/watch?v=3pDlvIb49WM", image: "/assets/tallpine-thumb.webp" },
-  { title: "This Time", context: "Live", href: "https://www.youtube.com/watch?v=JZrjaAK0RkU", image: "/assets/live-duo.webp" },
 ];
 
 export default function Home() {
